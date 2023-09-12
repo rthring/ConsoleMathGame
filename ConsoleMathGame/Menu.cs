@@ -5,8 +5,11 @@
         GameEngine engine = new();
         internal void ShowMenu(string name, DateTime date)
         {
-            Console.WriteLine("---------------------------------------");
+            Console.Clear();
             Console.WriteLine($"Hello {name.ToUpper()}. It's {date.DayOfWeek}. This is your maths game.\n");
+            Console.WriteLine("Press any key to show menu");
+            Console.ReadLine();
+            Console.WriteLine("\n");
 
             bool isGameOn = true;
 
